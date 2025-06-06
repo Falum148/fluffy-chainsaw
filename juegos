@@ -1,0 +1,57 @@
+Main 
+    String[] opciones = piedra, papel, tijera // opciones[0]
+    Int rondas, intentos, contadorPC, contadorJugador
+    String jugada, nombreJugadorA, nombre JugadorB, jugadaPC
+     
+    repetir rondas hasta que llegue a 3 
+        Escribir "Elige piedra papel o tijera"         
+        Leer jugada
+        jugadaPC = opciones[Random(0,2)]
+        Si jugada == jugadaPC
+        Entoces 
+            Escribir "empate"
+
+       FinFor 
+
+        Escribir "Elige piedra papel o tijera"        
+        Leer jugada
+        jugadaPC = opciones[Random(0,2)]
+        Si (jugada=piedra && jugadaPC=1)
+            Entoces 
+            Escribir "La PC gana esta ronda"
+            contadorPC = +1
+        FinFor    
+
+        Escribir "Elige piedra papel o tijera"        
+        Leer jugada
+        jugadaPC = opciones[Random(0,2)]
+        Si (jugada=piedra && jugadaPC=2)
+            Entoces 
+            Escribir "tu ganas esta ronda"
+            contadorJugador = +1 
+        FinFor    
+
+        Escribir "Elige piedra papel o tijera"        
+        Leer jugada
+        jugadaPC = opciones[Random(0,2)]
+        Si (jugada=papel && jugadaPC=0)
+            Entoces 
+            Escribir "tu ganas esta ronda"
+            contadorJugador = +1
+        FinFor    
+
+        Escribir "Elige piedra papel o tijera"        
+        Leer jugada
+        jugadaPC = opciones[Random(0,2)]
+        Si (jugada=tijera && jugadaPC=0)
+            Entoces 
+            Escribir "La PC gana esta ronda"
+            contadorPC = +1
+        FinFor
+
+    FinHasta
+
+    
+
+
+FinMain
