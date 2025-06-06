@@ -16,7 +16,7 @@ Main
         Escribir "Elige piedra papel o tijera"        
         Leer jugada
         jugadaPC = opciones[Random(0,2)]
-        Si (jugada=piedra && jugadaPC=1)
+        Si (jugada=piedra == jugadaPC=1)
             Entoces 
             Escribir "La PC gana esta ronda"
             contadorPC = +1
@@ -25,7 +25,7 @@ Main
         Escribir "Elige piedra papel o tijera"        
         Leer jugada
         jugadaPC = opciones[Random(0,2)]
-        Si (jugada=piedra && jugadaPC=2)
+        Si (jugada=piedra == jugadaPC=2)
             Entoces 
             Escribir "tu ganas esta ronda"
             contadorJugador = +1 
@@ -34,7 +34,7 @@ Main
         Escribir "Elige piedra papel o tijera"        
         Leer jugada
         jugadaPC = opciones[Random(0,2)]
-        Si (jugada=papel && jugadaPC=0)
+        Si (jugada=papel == jugadaPC=0)
             Entoces 
             Escribir "tu ganas esta ronda"
             contadorJugador = +1
@@ -43,7 +43,7 @@ Main
         Escribir "Elige piedra papel o tijera"        
         Leer jugada
         jugadaPC = opciones[Random(0,2)]
-        Si (jugada=tijera && jugadaPC=0)
+        Si (jugada=tijera == jugadaPC=0)
             Entoces 
             Escribir "La PC gana esta ronda"
             contadorPC = +1
