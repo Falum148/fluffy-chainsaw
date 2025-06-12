@@ -1,0 +1,33 @@
+using System;
+
+Random random = new Random();
+int numeroSecreto = random.Next(1, 101);
+int intentos = 7;
+bool adivinado = false;
+
+Console.WriteLine("Adivina el número entre 1 y 100. Tienes 7 intentos.");
+
+while (intentos > 0 && !adivinado)
+{
+    Console.Write("Ingresa tu número: ");
+    int intento = int.Parse(Console.ReadLine());
+
+    if (intento == numeroSecreto)
+    {
+        Console.WriteLine("¡Correcto! Adivinaste el número.");
+        adivinado = true;
+    }
+    else
+    {
+        intentos--;
+        if (intento < numeroSecreto)
+            Console.WriteLine("Demasiado bajo.");
+        else
+            Console.WriteLine("Demasiado alto.");
+        
+        Console.WriteLine($"Te quedan {intentos} intentos.");
+    }
+}
+
+if (!adivinado)
+    Console.WriteLine($"Perdiste. El número era {numeroSecreto}.");
