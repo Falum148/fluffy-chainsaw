@@ -1,2 +1,2 @@
 # fluffy-chainsaw
-Actividad de clase
+Actividades de la clase de lenguaje orientado a objetos
